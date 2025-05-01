@@ -1,0 +1,23 @@
+[project]
+name = "space-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Dokeun Oh",email = "ohdoking@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "semantic-kernel (>=1.29.0,<2.0.0)",
+    "streamlit (>=1.45.0,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "space_bot", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
